@@ -1,0 +1,26 @@
+<%- include('./includes/head.ejs') %>
+    </head>
+
+    <body>
+        <%- include('./includes/navigation.ejs') %>
+        <div class="container-fluid">
+            <div class="row pt-5">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <h3 class="text-center pb-5">Login to Authentication System</h3>
+                    <form method="POST" action="/login">
+                        <div class="form-group">
+                            <label for="email">Enter your Email:</label>
+                            <input type="text" class="form-control" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Enter your Password:</label>
+                            <input type="password" class="form-control" name="password">
+                        </div>
+                        <input class="btn btn-success" type="submit" value="Login">
+                    </form>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+<%- include('./includes/end.ejs') %>
